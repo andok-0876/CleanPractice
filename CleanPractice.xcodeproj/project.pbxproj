@@ -13,9 +13,11 @@
 		3BC5C46222601EDA006F96E1 /* CleanPractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BC5C46022601EDA006F96E1 /* CleanPractice.xcdatamodeld */; };
 		3BC5C46422601EDD006F96E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC5C46322601EDD006F96E1 /* Assets.xcassets */; };
 		3BC5C46722601EDD006F96E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC5C46522601EDD006F96E1 /* LaunchScreen.storyboard */; };
+		53AB7DFD9F809417147F8C89 /* Pods_CleanPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6AC61AC86F688A6E11C7F9 /* Pods_CleanPractice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05BF051B6590D014CAE00EF1 /* Pods-CleanPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-CleanPractice/Pods-CleanPractice.release.xcconfig"; sourceTree = "<group>"; };
 		3BC5C45622601EDA006F96E1 /* CleanPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC5C45922601EDA006F96E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BC5C45B22601EDA006F96E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		3BC5C46322601EDD006F96E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BC5C46622601EDD006F96E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BC5C46822601EDD006F96E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E4A021B1E4D49231B7B4F57 /* Pods-CleanPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanPractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CleanPractice/Pods-CleanPractice.debug.xcconfig"; sourceTree = "<group>"; };
+		BD6AC61AC86F688A6E11C7F9 /* Pods_CleanPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53AB7DFD9F809417147F8C89 /* Pods_CleanPractice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BF8B9073B48259EC7AE9E91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD6AC61AC86F688A6E11C7F9 /* Pods_CleanPractice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3BC5C44D22601EDA006F96E1 = {
 			isa = PBXGroup;
 			children = (
 				3BC5C45822601EDA006F96E1 /* CleanPractice */,
 				3BC5C45722601EDA006F96E1 /* Products */,
+				5A4559A8097D89BA81309062 /* Pods */,
+				1BF8B9073B48259EC7AE9E91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = CleanPractice;
 			sourceTree = "<group>";
 		};
+		5A4559A8097D89BA81309062 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E4A021B1E4D49231B7B4F57 /* Pods-CleanPractice.debug.xcconfig */,
+				05BF051B6590D014CAE00EF1 /* Pods-CleanPractice.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BC5C46B22601EDD006F96E1 /* Build configuration list for PBXNativeTarget "CleanPractice" */;
 			buildPhases = (
+				66253AD66C8DCB7AFBB09576 /* [CP] Check Pods Manifest.lock */,
 				3BC5C45222601EDA006F96E1 /* Sources */,
 				3BC5C45322601EDA006F96E1 /* Frameworks */,
 				3BC5C45422601EDA006F96E1 /* Resources */,
+				56BCA17C3FBA9A6DF805B56B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56BCA17C3FBA9A6DF805B56B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CleanPractice/Pods-CleanPractice-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CleanPractice/Pods-CleanPractice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66253AD66C8DCB7AFBB09576 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CleanPractice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3BC5C45222601EDA006F96E1 /* Sources */ = {
@@ -284,14 +351,12 @@
 		};
 		3BC5C46C22601EDD006F96E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E4A021B1E4D49231B7B4F57 /* Pods-CleanPractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CleanPractice/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kazando.CleanPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -301,14 +366,12 @@
 		};
 		3BC5C46D22601EDD006F96E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05BF051B6590D014CAE00EF1 /* Pods-CleanPractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CleanPractice/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kazando.CleanPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
